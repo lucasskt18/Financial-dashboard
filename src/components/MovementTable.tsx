@@ -16,7 +16,8 @@ export function MovementTable({
   if (movements.length === 0) return <p className="empty">{empty}</p>;
 
   return (
-    <table className="list">
+    <div className="sheet-wrap compact">
+      <table className="list">
       <thead>
         <tr>
           <th>Data</th>
@@ -50,6 +51,7 @@ export function MovementTable({
           </tr>
         ))}
       </tbody>
-    </table>
+      </table>
+    </div>
   );
 }
